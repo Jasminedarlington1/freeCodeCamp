@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+
+<html>
+  <head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jasmine's Survey Form</title>
+   <link rel="stylesheet" href="styles.css">
+   <body>
+     <section>
+       <header class="header">
+         <h1 id="title">A Survey on Getting a Job<h1>
+           <p id="description">Please Provide Information to Help This Survey by Filling The Form</p>
+         </header>
+       </section>
+       <fieldset>
+         <form id="survey-form">     
+<label id="name-label">Name <input id="name" type="text" placeholder="Enter your name"required></label>
+<label id="email-label">Email <input id="email" placeholder="Enter your email" type="email" required><label>
+<label id="number-label">Age (optional) <input id="number" name="age" type="number" placeholder="Enter your age" min="18" max="50" required></label>
+<label >
+  <label for=dropdown>Best means of Getting a Job
+    <select id="dropdown">
+      <option disabled selected value>Select</option>
+       <option  value="media">Social media</option>
+        <option value="google">Google</option>
+        <option value="apps">Job apps</option>
+        <option value="others">Others</option>
+      </select>
+    </label>
+  
+           <h3>What Job Roles are You in Search of ?</h3>
+            <label for="customer-service"><input id="customer-service" type="radio" name="job-type" value="service" class="radio" /> Customer Service</label>
+            <label for="collections-agent"><input id="collections-agent" type="radio" name="job-type" value="agent" class="radio" /> Collections Agent</label>
+            <label for="others"><input id="others" type="radio" name="job-type" value="other" class="radio" /> Others</label>
+             </label>
+           
+             <h3>What are the Hindrances to Getting a Job?</h3>
+            <label for="experience"><input id="experience" type="checkbox" value="experience"  class="box" />Experience
+              </label>
+              <label for="degree"><input id="degree" type="checkbox" value="degree" class="box" />Degree
+              </label>
+              <label for="No interviews"><input id="No interviews" type="checkbox" value="No interviews" class="box" />No interviews
+              </label>
+              <label for="bio">Provide a comment/suggestion:
+          <textarea id="comment" name="comment" rows="15" cols="30" placeholder="additional comments"></textarea>
+        </label>
+      <button id="submit" type="submit">Submit </button>
+            </fieldset>
+           </form>
+     </body>
+    </head>
+  </html>
